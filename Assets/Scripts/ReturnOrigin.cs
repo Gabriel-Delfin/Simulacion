@@ -8,16 +8,26 @@ public class ReturnOrigin : MonoBehaviour
     public Vector3 safeZone;
     public Vector3 safeZone2;
 
+    PersonAgent personAgentScript;
+
+    void Start()
+    {
+        personAgentScript = GetComponent<PersonAgent>();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x == safeZone.x && transform.position.y == safeZone.y && transform.position.z == safeZone.z)
+        if (personAgentScript.type == "victim")  
         {
-            _victim.SetActive(false);
-        }
-        else if(transform.position.x == safeZone2.x && transform.position.y == safeZone2.y && transform.position.z == safeZone2.z)
-        {
-            _victim.SetActive(false);
+            if (transform.position.x == safeZone.x && transform.position.y == safeZone.y && transform.position.z == safeZone.z)
+            {
+                _victim.SetActive(false);
+            }
+            else if(transform.position.x == safeZone2.x && transform.position.y == safeZone2.y && transform.position.z == safeZone2.z)
+            {
+                _victim.SetActive(false);
+            }
         }
     }
 }

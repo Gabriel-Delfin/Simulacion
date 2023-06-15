@@ -119,5 +119,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _victim: {fileID: 5754361031901790116}
-  safeZone: {x: 0, y: 0, z: 0}
-  safeZone2: {x: 0, y: 0, z: 0}
+  safeZone: {x: 48, y: -29, z: 0}
+  safeZone2: {x: 49, y: -29, z: 0}
