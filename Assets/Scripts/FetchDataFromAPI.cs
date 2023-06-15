@@ -40,7 +40,8 @@ public class FetchDataFromAPI : MonoBehaviour
             string jsonResponse = request.downloadHandler.text;
             
             // Parse the JSON response and store it in a C# HashMap
-            AgentData[] data = JsonUtility.FromJson<AgentData[]>(jsonResponse);
+            AgentData[] data = JsonConvert.DeserializeObject<AgentData[]>(jsonResponse);
+            
         }
     }
 }
