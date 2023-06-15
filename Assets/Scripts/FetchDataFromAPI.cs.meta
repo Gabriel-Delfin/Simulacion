@@ -3,7 +3,9 @@ guid: fcf8b7d91406046e7bbf6352bb4d0165
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sceneRoot: {instanceID: 0}
+  - prefabAgent: {fileID: 5754361031901790116, guid: 089e4f36586574e98b7e630625c9334c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
