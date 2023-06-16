@@ -69,6 +69,9 @@ public class FetchDataFromAPI : MonoBehaviour
 
                     // Add the new Agent to the dictionary
                     agentsMap.Add(id, agentObj);
+
+                    // Move to initial position
+                    agentObj.transform.position = new Vector3(agent.posX, agent.posY, 0);
                 }
                 else {
                     agentsMap.TryGetValue(id, out agentObj);
